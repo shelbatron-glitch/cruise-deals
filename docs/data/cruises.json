@@ -1,9 +1,9 @@
 {
- "last_checked": "2026-10-20T16:06:46.187576+00:00",
- "last_success": "2026-10-20T16:06:46.187576+00:00",
+ "last_checked": "2026-10-20T16:58:49.753618+00:00",
+ "last_success": "2026-10-20T16:58:49.753618+00:00",
  "status": "ok",
  "settings": {
-  "deal_discount": 0.25,
+  "deal_discount": 0.4,
   "months_ahead": 6,
   "passengers": 2,
   "excluded_lines": [
@@ -26,9 +26,9 @@
    ],
    "min_nights": 3,
    "max_nights": 5,
-   "count": 551,
-   "typical": 141.8,
-   "deal_line": 106.35,
+   "count": 484,
+   "typical": 149.67,
+   "deal_line": 89.8,
    "sailings": [
     {
      "id": "5292220",
@@ -41,10 +41,10 @@
      "per_person": 114,
      "per_night": 28.5,
      "total": 228,
-     "vs_typical": 0.799,
+     "vs_typical": 0.81,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -58,10 +58,10 @@
      "per_person": 124,
      "per_night": 31.0,
      "total": 248,
-     "vs_typical": 0.781,
+     "vs_typical": 0.793,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -75,10 +75,10 @@
      "per_person": 124,
      "per_night": 31.0,
      "total": 248,
-     "vs_typical": 0.781,
+     "vs_typical": 0.793,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -92,10 +92,10 @@
      "per_person": 131,
      "per_night": 32.75,
      "total": 262,
-     "vs_typical": 0.769,
+     "vs_typical": 0.781,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -109,10 +109,10 @@
      "per_person": 131,
      "per_night": 32.75,
      "total": 262,
-     "vs_typical": 0.769,
+     "vs_typical": 0.781,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Meraviglia-1187",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -126,10 +126,10 @@
      "per_person": 134,
      "per_night": 33.5,
      "total": 268,
-     "vs_typical": 0.764,
+     "vs_typical": 0.776,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -143,10 +143,10 @@
      "per_person": 141,
      "per_night": 35.25,
      "total": 282,
-     "vs_typical": 0.751,
+     "vs_typical": 0.764,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -160,10 +160,10 @@
      "per_person": 141,
      "per_night": 35.25,
      "total": 282,
-     "vs_typical": 0.751,
+     "vs_typical": 0.764,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -177,10 +177,10 @@
      "per_person": 145,
      "per_night": 36.25,
      "total": 290,
-     "vs_typical": 0.744,
+     "vs_typical": 0.758,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -194,10 +194,10 @@
      "per_person": 151,
      "per_night": 37.75,
      "total": 302,
-     "vs_typical": 0.734,
+     "vs_typical": 0.748,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -211,10 +211,10 @@
      "per_person": 151,
      "per_night": 37.75,
      "total": 302,
-     "vs_typical": 0.734,
+     "vs_typical": 0.748,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -228,10 +228,10 @@
      "per_person": 151,
      "per_night": 37.75,
      "total": 302,
-     "vs_typical": 0.734,
+     "vs_typical": 0.748,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -245,10 +245,10 @@
      "per_person": 171,
      "per_night": 42.75,
      "total": 342,
-     "vs_typical": 0.699,
+     "vs_typical": 0.714,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -262,10 +262,10 @@
      "per_person": 181,
      "per_night": 45.25,
      "total": 362,
-     "vs_typical": 0.681,
+     "vs_typical": 0.698,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -279,10 +279,10 @@
      "per_person": 190,
      "per_night": 47.5,
      "total": 380,
-     "vs_typical": 0.665,
+     "vs_typical": 0.683,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -296,10 +296,10 @@
      "per_person": 143,
      "per_night": 47.67,
      "total": 286,
-     "vs_typical": 0.664,
+     "vs_typical": 0.681,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -313,10 +313,10 @@
      "per_person": 143,
      "per_night": 47.67,
      "total": 286,
-     "vs_typical": 0.664,
+     "vs_typical": 0.681,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -330,10 +330,10 @@
      "per_person": 191,
      "per_night": 47.75,
      "total": 382,
-     "vs_typical": 0.663,
+     "vs_typical": 0.681,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -347,10 +347,10 @@
      "per_person": 144,
      "per_night": 48.0,
      "total": 288,
-     "vs_typical": 0.661,
+     "vs_typical": 0.679,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -364,10 +364,10 @@
      "per_person": 144,
      "per_night": 48.0,
      "total": 288,
-     "vs_typical": 0.661,
+     "vs_typical": 0.679,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -381,10 +381,10 @@
      "per_person": 197,
      "per_night": 49.25,
      "total": 394,
-     "vs_typical": 0.653,
+     "vs_typical": 0.671,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -398,10 +398,10 @@
      "per_person": 200,
      "per_night": 50.0,
      "total": 400,
-     "vs_typical": 0.647,
+     "vs_typical": 0.666,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -415,10 +415,10 @@
      "per_person": 200,
      "per_night": 50.0,
      "total": 400,
-     "vs_typical": 0.647,
+     "vs_typical": 0.666,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -432,10 +432,10 @@
      "per_person": 153,
      "per_night": 51.0,
      "total": 306,
-     "vs_typical": 0.64,
+     "vs_typical": 0.659,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -449,10 +449,10 @@
      "per_person": 153,
      "per_night": 51.0,
      "total": 306,
-     "vs_typical": 0.64,
+     "vs_typical": 0.659,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -466,10 +466,10 @@
      "per_person": 154,
      "per_night": 51.33,
      "total": 308,
-     "vs_typical": 0.638,
+     "vs_typical": 0.657,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -483,10 +483,10 @@
      "per_person": 154,
      "per_night": 51.33,
      "total": 308,
-     "vs_typical": 0.638,
+     "vs_typical": 0.657,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -500,10 +500,10 @@
      "per_person": 210,
      "per_night": 52.5,
      "total": 420,
-     "vs_typical": 0.63,
+     "vs_typical": 0.649,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -517,10 +517,10 @@
      "per_person": 217,
      "per_night": 54.25,
      "total": 434,
-     "vs_typical": 0.617,
+     "vs_typical": 0.638,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -534,10 +534,10 @@
      "per_person": 164,
      "per_night": 54.67,
      "total": 328,
-     "vs_typical": 0.614,
+     "vs_typical": 0.635,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -551,10 +551,10 @@
      "per_person": 164,
      "per_night": 54.67,
      "total": 328,
-     "vs_typical": 0.614,
+     "vs_typical": 0.635,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -568,10 +568,10 @@
      "per_person": 164,
      "per_night": 54.67,
      "total": 328,
-     "vs_typical": 0.614,
+     "vs_typical": 0.635,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -585,10 +585,10 @@
      "per_person": 164,
      "per_night": 54.67,
      "total": 328,
-     "vs_typical": 0.614,
+     "vs_typical": 0.635,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -602,10 +602,10 @@
      "per_person": 164,
      "per_night": 54.67,
      "total": 328,
-     "vs_typical": 0.614,
+     "vs_typical": 0.635,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -619,10 +619,10 @@
      "per_person": 230,
      "per_night": 57.5,
      "total": 460,
-     "vs_typical": 0.594,
+     "vs_typical": 0.616,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -636,10 +636,10 @@
      "per_person": 175,
      "per_night": 58.33,
      "total": 350,
-     "vs_typical": 0.589,
+     "vs_typical": 0.61,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -653,10 +653,10 @@
      "per_person": 175,
      "per_night": 58.33,
      "total": 350,
-     "vs_typical": 0.589,
+     "vs_typical": 0.61,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -670,10 +670,10 @@
      "per_person": 241,
      "per_night": 60.25,
      "total": 482,
-     "vs_typical": 0.575,
+     "vs_typical": 0.597,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -687,10 +687,10 @@
      "per_person": 241,
      "per_night": 60.25,
      "total": 482,
-     "vs_typical": 0.575,
+     "vs_typical": 0.597,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -704,10 +704,10 @@
      "per_person": 241,
      "per_night": 60.25,
      "total": 482,
-     "vs_typical": 0.575,
+     "vs_typical": 0.597,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -721,10 +721,10 @@
      "per_person": 241,
      "per_night": 60.25,
      "total": 482,
-     "vs_typical": 0.575,
+     "vs_typical": 0.597,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -738,10 +738,10 @@
      "per_person": 247,
      "per_night": 61.75,
      "total": 494,
-     "vs_typical": 0.565,
+     "vs_typical": 0.587,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -755,10 +755,10 @@
      "per_person": 247,
      "per_night": 61.75,
      "total": 494,
-     "vs_typical": 0.565,
+     "vs_typical": 0.587,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -772,10 +772,10 @@
      "per_person": 194,
      "per_night": 64.67,
      "total": 388,
-     "vs_typical": 0.544,
+     "vs_typical": 0.568,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -789,10 +789,10 @@
      "per_person": 195,
      "per_night": 65.0,
      "total": 390,
-     "vs_typical": 0.542,
+     "vs_typical": 0.566,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -806,10 +806,10 @@
      "per_person": 261,
      "per_night": 65.25,
      "total": 522,
-     "vs_typical": 0.54,
+     "vs_typical": 0.564,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -823,10 +823,10 @@
      "per_person": 261,
      "per_night": 65.25,
      "total": 522,
-     "vs_typical": 0.54,
+     "vs_typical": 0.564,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -840,10 +840,10 @@
      "per_person": 261,
      "per_night": 65.25,
      "total": 522,
-     "vs_typical": 0.54,
+     "vs_typical": 0.564,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -857,10 +857,10 @@
      "per_person": 196,
      "per_night": 65.33,
      "total": 392,
-     "vs_typical": 0.539,
+     "vs_typical": 0.564,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -874,10 +874,10 @@
      "per_person": 329,
      "per_night": 65.8,
      "total": 658,
-     "vs_typical": 0.536,
+     "vs_typical": 0.56,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Margaritaville-At-Sea-Beachcomber-723",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -891,27 +891,10 @@
      "per_person": 267,
      "per_night": 66.75,
      "total": 534,
-     "vs_typical": 0.529,
+     "vs_typical": 0.554,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
-     "new": false
-    },
-    {
-     "id": "5274631",
-     "date": "2026-12-02",
-     "nights": 5,
-     "ship": "Jewel Of The Seas",
-     "line": "Royal Caribbean",
-     "itinerary": "5 nights, round-trip from Tampa, USA",
-     "port": "Tampa",
-     "per_person": 334,
-     "per_night": 66.8,
-     "total": 668,
-     "vs_typical": 0.529,
-     "is_deal": true,
-     "url": "https://www.cruisemapper.com/ships/Jewel-Of-The-Seas-569",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -925,10 +908,10 @@
      "per_person": 205,
      "per_night": 68.33,
      "total": 410,
-     "vs_typical": 0.518,
+     "vs_typical": 0.543,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -942,10 +925,10 @@
      "per_person": 205,
      "per_night": 68.33,
      "total": 410,
-     "vs_typical": 0.518,
+     "vs_typical": 0.543,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -959,61 +942,10 @@
      "per_person": 205,
      "per_night": 68.33,
      "total": 410,
-     "vs_typical": 0.518,
+     "vs_typical": 0.543,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
-     "price_change": null,
-     "new": false
-    },
-    {
-     "id": "5272232",
-     "date": "2026-11-20",
-     "nights": 5,
-     "ship": "Margaritaville At Sea Islander",
-     "line": "Margaritaville at Sea",
-     "itinerary": "5 nights, round-trip from Tampa, USA",
-     "port": "Tampa",
-     "per_person": 347,
-     "per_night": 69.4,
-     "total": 694,
-     "vs_typical": 0.511,
-     "is_deal": true,
-     "url": "https://www.cruisemapper.com/ships/Margaritaville-At-Sea-Islander-536",
-     "price_change": null,
-     "new": false
-    },
-    {
-     "id": "5272234",
-     "date": "2026-11-30",
-     "nights": 5,
-     "ship": "Margaritaville At Sea Islander",
-     "line": "Margaritaville at Sea",
-     "itinerary": "5 nights, round-trip from Tampa, USA",
-     "port": "Tampa",
-     "per_person": 347,
-     "per_night": 69.4,
-     "total": 694,
-     "vs_typical": 0.511,
-     "is_deal": true,
-     "url": "https://www.cruisemapper.com/ships/Margaritaville-At-Sea-Islander-536",
-     "price_change": null,
-     "new": false
-    },
-    {
-     "id": "5272243",
-     "date": "2027-01-16",
-     "nights": 5,
-     "ship": "Margaritaville At Sea Islander",
-     "line": "Margaritaville at Sea",
-     "itinerary": "5 nights, round-trip from Tampa, USA",
-     "port": "Tampa",
-     "per_person": 351,
-     "per_night": 70.2,
-     "total": 702,
-     "vs_typical": 0.505,
-     "is_deal": true,
-     "url": "https://www.cruisemapper.com/ships/Margaritaville-At-Sea-Islander-536",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1027,10 +959,10 @@
      "per_person": 281,
      "per_night": 70.25,
      "total": 562,
-     "vs_typical": 0.505,
+     "vs_typical": 0.531,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1044,10 +976,78 @@
      "per_person": 281,
      "per_night": 70.25,
      "total": 562,
-     "vs_typical": 0.505,
+     "vs_typical": 0.531,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
-     "price_change": null,
+     "price_change": 0,
+     "new": false
+    },
+    {
+     "id": "5292282",
+     "date": "2027-04-12",
+     "nights": 4,
+     "ship": "MSC Seaside",
+     "line": "MSC Cruises",
+     "itinerary": "4 nights, round-trip from Miami, USA",
+     "port": "Miami",
+     "per_person": 281,
+     "per_night": 70.25,
+     "total": 562,
+     "vs_typical": 0.531,
+     "is_deal": true,
+     "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
+     "price_change": 0,
+     "new": false
+    },
+    {
+     "id": "5292285",
+     "date": "2027-04-19",
+     "nights": 4,
+     "ship": "MSC Seaside",
+     "line": "MSC Cruises",
+     "itinerary": "4 nights, round-trip from Miami, USA",
+     "port": "Miami",
+     "per_person": 281,
+     "per_night": 70.25,
+     "total": 562,
+     "vs_typical": 0.531,
+     "is_deal": true,
+     "url": "https://www.cruisemapper.com/ships/MSC-Seaside-1205",
+     "price_change": 0,
+     "new": false
+    },
+    {
+     "id": "5280785",
+     "date": "2026-12-12",
+     "nights": 5,
+     "ship": "Freedom Of The Seas",
+     "line": "Royal Caribbean",
+     "itinerary": "5 nights, round-trip from Miami, USA",
+     "port": "Miami",
+     "per_person": 353,
+     "per_night": 70.6,
+     "total": 706,
+     "vs_typical": 0.528,
+     "is_deal": true,
+     "url": "https://www.cruisemapper.com/ships/Freedom-Of-The-Seas-654",
+     "price_change": 0,
+     "new": false
+    },
+    {
+     "id": "5298641",
+     "date": "2026-12-17",
+     "nights": 3,
+     "ship": "MSC Seashore",
+     "line": "MSC Cruises",
+     "itinerary": "3 nights, round-trip from Port Canaveral, USA",
+     "port": "Port Canaveral",
+     "per_person": 212,
+     "per_night": 70.67,
+     "total": 424,
+     "vs_typical": 0.528,
+     "is_deal": true,
+     "url": "https://www.cruisemapper.com/ships/MSC-Seashore-2143",
+     "price_change": 0,
      "new": false
     }
    ]
@@ -1074,7 +1074,7 @@
    "max_nights": 7,
    "count": 26,
    "typical": 299.57,
-   "deal_line": 224.68,
+   "deal_line": 179.74,
    "sailings": [
     {
      "id": "5275950",
@@ -1088,9 +1088,9 @@
      "per_night": 216.86,
      "total": 3036,
      "vs_typical": 0.276,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1105,9 +1105,9 @@
      "per_night": 224.43,
      "total": 3142,
      "vs_typical": 0.251,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1122,9 +1122,9 @@
      "per_night": 224.43,
      "total": 3142,
      "vs_typical": 0.251,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1141,7 +1141,7 @@
      "vs_typical": 0.226,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1158,7 +1158,7 @@
      "vs_typical": 0.226,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1175,7 +1175,7 @@
      "vs_typical": 0.075,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1192,7 +1192,7 @@
      "vs_typical": 0.06,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1209,7 +1209,7 @@
      "vs_typical": 0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1226,7 +1226,7 @@
      "vs_typical": 0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1243,7 +1243,7 @@
      "vs_typical": 0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1260,7 +1260,7 @@
      "vs_typical": 0.035,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1277,7 +1277,7 @@
      "vs_typical": 0.025,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1294,7 +1294,7 @@
      "vs_typical": 0.0,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1311,7 +1311,7 @@
      "vs_typical": 0.0,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1328,7 +1328,7 @@
      "vs_typical": -0.045,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1345,7 +1345,7 @@
      "vs_typical": -0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1362,7 +1362,7 @@
      "vs_typical": -0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1379,7 +1379,7 @@
      "vs_typical": -0.06,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1396,7 +1396,7 @@
      "vs_typical": -0.085,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1413,7 +1413,7 @@
      "vs_typical": -0.11,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1430,7 +1430,7 @@
      "vs_typical": -0.11,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1447,7 +1447,7 @@
      "vs_typical": -0.11,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1464,7 +1464,7 @@
      "vs_typical": -0.115,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1481,7 +1481,7 @@
      "vs_typical": -0.125,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1498,7 +1498,7 @@
      "vs_typical": -0.14,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1515,7 +1515,7 @@
      "vs_typical": -0.376,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Pride-of-America-594",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     }
    ]
@@ -1532,7 +1532,7 @@
    "max_nights": 7,
    "count": 261,
    "typical": 131.43,
-   "deal_line": 98.57,
+   "deal_line": 78.86,
    "sailings": [
     {
      "id": "5296607",
@@ -1548,7 +1548,7 @@
      "vs_typical": 0.633,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Smeralda-2027",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1565,7 +1565,7 @@
      "vs_typical": 0.597,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1582,7 +1582,7 @@
      "vs_typical": 0.565,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1599,7 +1599,7 @@
      "vs_typical": 0.565,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1616,7 +1616,7 @@
      "vs_typical": 0.565,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1633,7 +1633,7 @@
      "vs_typical": 0.53,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1650,7 +1650,7 @@
      "vs_typical": 0.5,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1667,7 +1667,7 @@
      "vs_typical": 0.5,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1684,7 +1684,7 @@
      "vs_typical": 0.5,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1701,7 +1701,7 @@
      "vs_typical": 0.5,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1718,7 +1718,7 @@
      "vs_typical": 0.488,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1735,7 +1735,7 @@
      "vs_typical": 0.456,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1752,7 +1752,7 @@
      "vs_typical": 0.438,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/MSC-Magnifica-636",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1769,7 +1769,7 @@
      "vs_typical": 0.424,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1786,7 +1786,7 @@
      "vs_typical": 0.424,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1803,7 +1803,7 @@
      "vs_typical": 0.413,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1820,7 +1820,7 @@
      "vs_typical": 0.412,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1835,9 +1835,9 @@
      "per_night": 79.29,
      "total": 1110,
      "vs_typical": 0.397,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1852,9 +1852,9 @@
      "per_night": 79.29,
      "total": 1110,
      "vs_typical": 0.397,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1869,9 +1869,9 @@
      "per_night": 79.71,
      "total": 1116,
      "vs_typical": 0.394,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1886,9 +1886,9 @@
      "per_night": 79.71,
      "total": 1116,
      "vs_typical": 0.394,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1903,9 +1903,9 @@
      "per_night": 79.71,
      "total": 1116,
      "vs_typical": 0.394,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1920,9 +1920,9 @@
      "per_night": 83.17,
      "total": 998,
      "vs_typical": 0.367,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1937,9 +1937,9 @@
      "per_night": 84.75,
      "total": 678,
      "vs_typical": 0.355,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Virtuosa-1981",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1954,9 +1954,9 @@
      "per_night": 85.33,
      "total": 512,
      "vs_typical": 0.351,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1971,9 +1971,9 @@
      "per_night": 85.33,
      "total": 1024,
      "vs_typical": 0.351,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -1988,9 +1988,9 @@
      "per_night": 85.71,
      "total": 1200,
      "vs_typical": 0.348,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2005,9 +2005,9 @@
      "per_night": 85.71,
      "total": 1200,
      "vs_typical": 0.348,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2022,9 +2022,9 @@
      "per_night": 85.71,
      "total": 1200,
      "vs_typical": 0.348,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2039,9 +2039,9 @@
      "per_night": 86.43,
      "total": 1210,
      "vs_typical": 0.342,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2056,9 +2056,9 @@
      "per_night": 86.43,
      "total": 1210,
      "vs_typical": 0.342,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2073,9 +2073,9 @@
      "per_night": 86.86,
      "total": 1216,
      "vs_typical": 0.339,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2090,9 +2090,9 @@
      "per_night": 86.86,
      "total": 1216,
      "vs_typical": 0.339,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2107,9 +2107,9 @@
      "per_night": 89.29,
      "total": 1250,
      "vs_typical": 0.321,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2124,9 +2124,9 @@
      "per_night": 89.71,
      "total": 1256,
      "vs_typical": 0.317,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2141,9 +2141,9 @@
      "per_night": 90.71,
      "total": 1270,
      "vs_typical": 0.31,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2158,9 +2158,9 @@
      "per_night": 90.71,
      "total": 1270,
      "vs_typical": 0.31,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2175,9 +2175,9 @@
      "per_night": 91.57,
      "total": 1282,
      "vs_typical": 0.303,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2192,9 +2192,9 @@
      "per_night": 92.14,
      "total": 1290,
      "vs_typical": 0.299,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2209,9 +2209,9 @@
      "per_night": 93.57,
      "total": 1310,
      "vs_typical": 0.288,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2226,9 +2226,9 @@
      "per_night": 93.67,
      "total": 1124,
      "vs_typical": 0.287,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2243,9 +2243,9 @@
      "per_night": 95.0,
      "total": 1330,
      "vs_typical": 0.277,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2260,9 +2260,9 @@
      "per_night": 95.0,
      "total": 1330,
      "vs_typical": 0.277,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2277,9 +2277,9 @@
      "per_night": 95.0,
      "total": 1330,
      "vs_typical": 0.277,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2294,9 +2294,9 @@
      "per_night": 95.43,
      "total": 1336,
      "vs_typical": 0.274,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2311,9 +2311,9 @@
      "per_night": 95.43,
      "total": 1336,
      "vs_typical": 0.274,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2328,9 +2328,9 @@
      "per_night": 95.71,
      "total": 1340,
      "vs_typical": 0.272,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Toscana-2079",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2345,9 +2345,9 @@
      "per_night": 96.43,
      "total": 1350,
      "vs_typical": 0.266,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2362,9 +2362,9 @@
      "per_night": 96.43,
      "total": 1350,
      "vs_typical": 0.266,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2379,9 +2379,9 @@
      "per_night": 96.43,
      "total": 1350,
      "vs_typical": 0.266,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Euribia-2204",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2396,9 +2396,9 @@
      "per_night": 96.86,
      "total": 1356,
      "vs_typical": 0.263,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Sinfonia-614",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2413,9 +2413,9 @@
      "per_night": 97.86,
      "total": 1370,
      "vs_typical": 0.255,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Magnifica-636",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2430,9 +2430,9 @@
      "per_night": 98.0,
      "total": 784,
      "vs_typical": 0.254,
-     "is_deal": true,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Magnifica-636",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2449,7 +2449,7 @@
      "vs_typical": 0.249,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2466,7 +2466,7 @@
      "vs_typical": 0.249,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2483,7 +2483,7 @@
      "vs_typical": 0.245,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2500,7 +2500,7 @@
      "vs_typical": 0.245,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2517,7 +2517,7 @@
      "vs_typical": 0.245,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Costa-Pacifica-679",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2534,7 +2534,7 @@
      "vs_typical": 0.245,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Magnifica-636",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     },
     {
@@ -2551,7 +2551,7 @@
      "vs_typical": 0.242,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/MSC-Divina-549",
-     "price_change": null,
+     "price_change": 0,
      "new": false
     }
    ]
