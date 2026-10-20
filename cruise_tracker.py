@@ -51,6 +51,7 @@ DEFAULT_SEARCHES = [
     {"name": "Hawaii", "ports": ["Honolulu"], "min_nights": 1, "max_nights": 7},
     {"name": "Spain", "ports": ["Barcelona", "Malaga", "Palma de Mallorca", "Valencia"],
      "min_nights": 1, "max_nights": 7},
+    {"name": "Texas short cruises", "ports": ["Galveston"], "min_nights": 3, "max_nights": 5},
 ]
 
 MAX_PAGES_PER_PORT = 40     # safety stop; CruiseMapper shows 15 sailings per page
@@ -171,7 +172,7 @@ def load_choices():
         settings = parse_settings_rows(rows[:split], notes)
         searches = parse_search_rows(rows[split:], notes)
         if not searches:
-            notes.append("No searches were switched on in the sheet, so the usual four were used.")
+            notes.append("No searches were switched on in the sheet, so the usual searches were used.")
             searches = DEFAULT_SEARCHES
         return settings, searches, notes, "sheet"
     except Exception as e:
