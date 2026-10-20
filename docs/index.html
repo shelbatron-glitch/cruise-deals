@@ -70,9 +70,18 @@
   .h2-note { margin: 0 0 14px; color: var(--ink-2); font-size: 15px; }
 
   /* Deal tickets: boarding-pass stubs */
-  .tickets { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -20px;
+  .tickets { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 20px; margin: 0 -20px;
              padding: 4px 20px 14px; scrollbar-width: none; }
   .tickets::-webkit-scrollbar { display: none; }
+  .deals-row { position: relative; }
+  .deals-row::after { content: ""; position: absolute; top: 0; bottom: 14px; right: -20px; width: 56px; pointer-events: none;
+                      background: linear-gradient(90deg, transparent, var(--sky)); transition: opacity .2s; }
+  .deals-row.at-end::after { opacity: 0; }
+  .arrow { position: absolute; top: 106px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0 0 3px;
+           background: var(--paper); color: var(--ink); font-size: 28px; line-height: 1; cursor: pointer;
+           box-shadow: 0 4px 14px -4px rgba(14,42,71,.5); display: grid; place-items: center; }
+  .arrow.prev { left: -8px; } .arrow.next { right: -8px; }
+  .arrow[hidden] { display: none; }
   .ticket { flex: none; width: min(78vw, 290px); scroll-snap-align: start; text-decoration: none; color: inherit;
             border-radius: 18px; background: var(--paper); box-shadow: 0 1px 0 var(--line), 0 10px 30px -18px rgba(14,42,71,.45);
             display: flex; flex-direction: column; }
@@ -291,7 +300,9 @@ function render() {
   if (!g) {
     html += `<h2>Best deals right now</h2><p class="h2-note">At least ${pct}% under the usual nightly price for their destination.</p>`;
     if (allDeals.length) {
-      html += `<div class="tickets">${allDeals.slice(0, 12).map(x => ticket(x.s, x.g, P)).join("")}</div>`;
+      html += `<div class="deals-row"><button class="arrow prev" aria-label="Previous deals" hidden>‹</button>`
+        + `<div class="tickets">${allDeals.slice(0, 12).map(x => ticket(x.s, x.g, P)).join("")}</div>`
+        + `<button class="arrow next" aria-label="More deals">›</button></div>`;
     } else {
       html += `<div class="dest"><div class="empty">Nothing is ${pct}% under typical today. The cheapest sailings for each destination are below.</div></div>`;
     }
@@ -305,6 +316,19 @@ function render() {
   document.querySelectorAll(".showall").forEach(b => b.onclick = () => {
     b.previousElementSibling.querySelectorAll(".row[hidden]").forEach(x => x.hidden = false); b.remove();
   });
+  const dealsRow = document.querySelector(".deals-row");
+  if (dealsRow) {
+    const sc = dealsRow.querySelector(".tickets"), prev = dealsRow.querySelector(".prev"), next = dealsRow.querySelector(".next");
+    const step = () => (sc.querySelector(".ticket")?.offsetWidth || 280) + 14;
+    const sync = () => {
+      const end = sc.scrollLeft + sc.clientWidth >= sc.scrollWidth - 4;
+      prev.hidden = sc.scrollLeft < 4; next.hidden = end; dealsRow.classList.toggle("at-end", end);
+    };
+    prev.onclick = () => sc.scrollBy({ left: -step(), behavior: "smooth" });
+    next.onclick = () => sc.scrollBy({ left: step(), behavior: "smooth" });
+    sc.addEventListener("scroll", sync, { passive: true });
+    window.onresize = sync; sync();
+  }
 }
 
 function renderMeta() {
