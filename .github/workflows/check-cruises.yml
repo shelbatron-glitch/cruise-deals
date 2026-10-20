@@ -1,0 +1,46 @@
+name: Check cruises
+
+on:
+  schedule:
+    - cron: "17 11 * * *"     # every day around 7:17am Eastern (GitHub sometimes runs it a little late)
+  workflow_dispatch:           # adds a "Run workflow" button for an on-demand check
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cruise-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Check CruiseMapper
+        env:
+          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+        run: python cruise_tracker.py
+
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "cruise-tracker"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data state.json 2>/dev/null || git add docs/data
+          git diff --cached --quiet || git commit -m "Cruise check $(date -u +%Y-%m-%d)"
+          git push
