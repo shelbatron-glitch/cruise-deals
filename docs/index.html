@@ -3,117 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cruise Deals</title>
+<title>Bridget's Cruises</title>
 <meta name="description" content="Budget cruise deals, checked every day.">
-<meta name="theme-color" content="#0b4f6c">
+<meta name="theme-color" content="#0e2a47">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Cruises">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Bridget's Cruises">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f4f1ea; --card: #fffdf8; --ink: #1d2a30; --muted: #65737a; --line: #e5dfd3;
-    --sea: #0b4f6c; --sea-soft: #dcebf1; --deal: #17784a; --deal-soft: #e1f2e8;
-    --warn: #8a5a00; --warn-soft: #fbf0d9; --down: #17784a; --up: #a1432f;
+    --sky: #eaf3f7; --paper: #ffffff; --ink: #0e2a47; --ink-2: #4a6178; --line: #d5e3ea;
+    --sea: #1f6f8b; --glass: #7fd1c7; --sun: #ffb627; --sun-ink: #5a3b00; --up: #b4462e;
+    --display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #10181c; --card: #172227; --ink: #e9eef0; --muted: #93a3aa; --line: #26353c;
-      --sea: #6cb6d6; --sea-soft: #173440; --deal: #5fcf93; --deal-soft: #15342a;
-      --warn: #f0c46a; --warn-soft: #3a2e14; --down: #5fcf93; --up: #ef8f78;
+      --sky: #08182a; --paper: #10243a; --ink: #eef5f9; --ink-2: #9cb3c6; --line: #1f3a54;
+      --sea: #7fd1c7; --glass: #2a6f78; --sun: #ffc24d; --sun-ink: #3d2800; --up: #f0947c;
     }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.45 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
-  }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 0 16px 48px; }
-  header { padding: 28px 0 14px; }
-  h1 { font-size: 30px; line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
-  .sub { color: var(--muted); margin: 6px 0 0; font-size: 15px; }
-  .status { margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; font-size: 14px;
-            background: var(--warn-soft); color: var(--warn); }
-  .status p { margin: 0; } .status p + p { margin-top: 4px; }
+  body { margin: 0; background: var(--sky); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
 
-  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 14px; margin: 0 -16px;
-           padding-left: 16px; padding-right: 16px; scrollbar-width: none; }
-  .chips::-webkit-scrollbar { display: none; }
-  .chip { flex: none; border: 1px solid var(--line); background: var(--card); color: var(--ink);
-          padding: 8px 14px; border-radius: 999px; font: inherit; font-size: 14px; cursor: pointer; }
-  .chip[aria-pressed="true"] { background: var(--sea); border-color: var(--sea); color: var(--card); }
+  /* Hero: the one loud thing on the page */
+  .hero { position: relative; min-height: 58vh; max-height: 560px; display: flex; align-items: flex-end;
+          color: #fff; background: var(--ink) center / cover no-repeat; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; inset: 0;
+          background: linear-gradient(180deg, rgba(8,24,42,.15) 0%, rgba(8,24,42,0) 35%, rgba(8,24,42,.78) 100%); }
+  .hero-in { position: relative; z-index: 1; width: 100%; max-width: 760px; margin: 0 auto;
+             padding: calc(env(safe-area-inset-top) + 24px) 20px 26px; }
+  .back { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 14px; padding: 7px 14px 7px 10px;
+          border-radius: 999px; border: 0; background: rgba(255,255,255,.18); color: #fff; font: inherit;
+          font-size: 15px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); cursor: pointer; }
+  .hero h1 { font-family: var(--display); font-weight: 800; font-stretch: 78%; font-size: clamp(48px, 15vw, 96px);
+             line-height: .88; letter-spacing: -0.035em; margin: 0; text-wrap: balance;
+             text-shadow: 0 2px 24px rgba(0,0,0,.25); }
+  .hero p { margin: 12px 0 0; font-size: 16px; opacity: .92; }
+  .hero p b { font-weight: 650; }
 
-  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
-       margin: 22px 0 10px; font-weight: 600; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
-  .card + .card { margin-top: 14px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 56px; }
+  .notice { margin: 18px 0 0; padding: 12px 14px; border-radius: 12px; font-size: 14px;
+            background: color-mix(in srgb, var(--sun) 22%, var(--paper)); color: var(--ink); }
+  .notice p { margin: 0; } .notice p + p { margin-top: 4px; }
 
-  .sailing { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 14px 16px;
-             border-top: 1px solid var(--line); color: inherit; text-decoration: none; }
-  .sailing:first-child { border-top: none; }
-  .sailing[hidden] { display: none; }
-  .sailing:active { background: var(--sea-soft); }
-  .when { font-weight: 650; }
-  .ship { font-size: 14px; color: var(--muted); }
-  .meta { font-size: 13px; color: var(--muted); grid-column: 1 / -1; }
-  .price { text-align: right; }
-  .pn { font-weight: 700; font-size: 18px; font-variant-numeric: tabular-nums; }
-  .pn small { font-weight: 500; font-size: 12px; color: var(--muted); }
-  .tot { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .tags { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; }
-  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--sea-soft); color: var(--sea); }
-  .tag.deal { background: var(--deal-soft); color: var(--deal); font-weight: 600; }
-  .tag.down { color: var(--down); background: var(--deal-soft); }
-  .tag.up { color: var(--up); background: transparent; border: 1px solid var(--line); }
+  /* Destination picker */
+  .places { display: flex; gap: 10px; overflow-x: auto; margin: 18px -20px 0; padding: 4px 20px 6px;
+            scrollbar-width: none; }
+  .places::-webkit-scrollbar { display: none; }
+  .place { flex: none; display: flex; align-items: center; gap: 8px; padding: 4px 14px 4px 4px; border-radius: 999px;
+           border: 1px solid var(--line); background: var(--paper); color: var(--ink); font: inherit; font-size: 15px; cursor: pointer; }
+  .place span.ph { width: 32px; height: 32px; border-radius: 50%; background: var(--glass) center / cover; }
+  .place[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
-  .dest-head { padding: 16px 16px 12px; display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
-  .dest-head h3 { margin: 0; font-size: 19px; }
-  .dest-head .ports { font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .typical { text-align: right; font-size: 13px; color: var(--muted); white-space: nowrap; }
-  .typical b { color: var(--ink); font-size: 15px; font-variant-numeric: tabular-nums; }
-  .spark { display: block; width: 100%; height: 44px; padding: 0 16px; }
-  .spark-label { font-size: 12px; color: var(--muted); padding: 0 16px 10px; display: flex; justify-content: space-between; }
-  .more { display: block; width: 100%; border: none; border-top: 1px solid var(--line); background: none;
-          color: var(--sea); font: inherit; font-size: 15px; padding: 13px; cursor: pointer; }
-  .empty { padding: 16px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+  h2 { font-family: var(--display); font-weight: 700; font-stretch: 90%; font-size: 26px; letter-spacing: -0.02em;
+       line-height: 1.1; margin: 34px 0 4px; }
+  .h2-note { margin: 0 0 14px; color: var(--ink-2); font-size: 15px; }
 
-  .settings { margin-top: 28px; padding: 18px 16px; }
-  .settings p { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
-  .btn { display: inline-block; margin-top: 10px; background: var(--sea); color: var(--card);
-         text-decoration: none; padding: 11px 18px; border-radius: 999px; font-weight: 600; font-size: 15px; }
-  footer { margin-top: 22px; font-size: 12px; color: var(--muted); text-align: center; }
-  .loading { padding: 60px 0; text-align: center; color: var(--muted); }
+  /* Deal tickets: boarding-pass stubs */
+  .tickets { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -20px;
+             padding: 4px 20px 14px; scrollbar-width: none; }
+  .tickets::-webkit-scrollbar { display: none; }
+  .ticket { flex: none; width: min(78vw, 290px); scroll-snap-align: start; text-decoration: none; color: inherit;
+            border-radius: 18px; background: var(--paper); box-shadow: 0 1px 0 var(--line), 0 10px 30px -18px rgba(14,42,71,.45);
+            display: flex; flex-direction: column; }
+  .ticket .pic { height: 128px; border-radius: 18px 18px 0 0; background: var(--glass) center / cover; position: relative; }
+  .ticket .off { position: absolute; left: 12px; bottom: 12px; background: var(--sun); color: var(--sun-ink);
+                 font-family: var(--display); font-weight: 800; font-size: 15px; padding: 4px 10px; border-radius: 8px; }
+  .ticket .where { position: absolute; left: 12px; top: 12px; background: rgba(8,24,42,.55); color: #fff; font-size: 13px;
+                   font-weight: 600; padding: 3px 9px; border-radius: 8px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .perf { position: relative; height: 0; border-top: 2px dashed var(--line); margin: 0 14px; }
+  .perf::before, .perf::after { content: ""; position: absolute; top: -11px; width: 20px; height: 20px; border-radius: 50%; background: var(--sky); }
+  .perf::before { left: -24px; } .perf::after { right: -24px; }
+  .ticket .body { padding: 14px 16px 16px; display: grid; gap: 2px; }
+  .ticket .price { font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; letter-spacing: -0.03em; }
+  .ticket .price small { font-family: system-ui, sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 0; color: var(--ink-2); }
+  .ticket .when { font-weight: 650; margin-top: 8px; }
+  .ticket .sub, .row .sub { color: var(--ink-2); font-size: 14px; }
+  .more-btn { display: block; width: 100%; margin-top: 4px; padding: 13px; border-radius: 12px; border: 1px solid var(--line);
+              background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+
+  /* Destination cards */
+  .dest { background: var(--paper); border-radius: 20px; overflow: hidden; margin-bottom: 18px;
+          box-shadow: 0 1px 0 var(--line); }
+  .dest-pic { display: block; width: 100%; border: 0; padding: 0; text-align: left; cursor: pointer;
+              aspect-ratio: 16 / 8; background: var(--glass) center / cover; position: relative; color: #fff; font: inherit; }
+  .dest-pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,24,42,0) 40%, rgba(8,24,42,.72) 100%); }
+  .dest-pic .cap { position: absolute; z-index: 1; left: 18px; right: 18px; bottom: 14px; display: flex;
+                   justify-content: space-between; align-items: flex-end; gap: 12px; }
+  .dest-pic h3 { font-family: var(--display); font-weight: 800; font-stretch: 80%; font-size: 40px; line-height: .95;
+                 letter-spacing: -0.03em; margin: 0; }
+  .dest-pic .from { text-align: right; font-size: 13px; line-height: 1.2; white-space: nowrap; }
+  .dest-pic .from b { display: block; font-family: var(--display); font-size: 26px; font-weight: 800; }
+  .dest-meta { display: flex; justify-content: space-between; gap: 12px; padding: 12px 18px 0; color: var(--ink-2); font-size: 14px; }
+  .spark { display: block; width: calc(100% - 36px); height: 40px; margin: 6px 18px 0; }
+
+  .rows { padding: 4px 0; }
+  .row { display: grid; grid-template-columns: 52px 1fr auto; gap: 14px; align-items: center; padding: 12px 18px;
+         text-decoration: none; color: inherit; border-top: 1px solid var(--line); }
+  .row[hidden] { display: none; }
+  .rows > .row:first-child { border-top: 0; }
+  .cal { width: 52px; text-align: center; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .cal .m { background: var(--sea); color: var(--paper); font-size: 12px; font-weight: 700; padding: 2px 0; }
+  .cal .d { font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1.25; }
+  .row .name { font-weight: 600; line-height: 1.3; }
+  .row .amt { text-align: right; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1.1; }
+  .row .amt small { display: block; font-family: system-ui, sans-serif; font-weight: 500; font-size: 12px; color: var(--ink-2); }
+  .flag { display: inline-block; margin-top: 4px; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
+          background: var(--sun); color: var(--sun-ink); }
+  .flag.down { background: color-mix(in srgb, var(--glass) 45%, var(--paper)); color: var(--ink); font-weight: 600; }
+  .flag.up { background: transparent; color: var(--up); border: 1px solid var(--line); font-weight: 600; }
+  .empty { padding: 18px; color: var(--ink-2); font-size: 15px; }
+  .see-all { display: block; width: 100%; padding: 14px; border: 0; border-top: 1px solid var(--line); background: none;
+             color: var(--sea); font: inherit; font-weight: 650; cursor: pointer; }
+
+  .about { margin-top: 30px; padding: 20px 18px; border-radius: 20px; background: var(--ink); color: var(--paper); }
+  .about h2 { margin: 0 0 8px; font-size: 22px; }
+  .about p { margin: 0 0 8px; font-size: 15px; opacity: .88; }
+  .btn { display: inline-block; margin-top: 8px; background: var(--sun); color: var(--sun-ink); text-decoration: none;
+         padding: 11px 18px; border-radius: 999px; font-weight: 700; }
+  footer { margin-top: 22px; font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+  footer a { color: var(--ink-2); }
+  .loading { padding: 50px 0; text-align: center; color: var(--ink-2); }
 </style>
 </head>
 <body>
+<header class="hero" id="hero">
+  <div class="hero-in">
+    <div id="backslot"></div>
+    <h1 id="title">Bridget's Cruises</h1>
+    <p id="sub">Loading the latest prices…</p>
+  </div>
+</header>
+
 <div class="wrap">
-  <header>
-    <h1>Cruise deals</h1>
-    <p class="sub" id="sub">Loading…</p>
-    <div class="status" id="status" hidden></div>
-  </header>
-
-  <div class="chips" id="chips" role="toolbar" aria-label="Destination"></div>
-  <main id="main"><div class="loading">Fetching the latest prices…</div></main>
-
-  <section class="card settings" id="settings" hidden></section>
-  <footer>Prices are CruiseMapper “from” fares per person for the cheapest cabin, and they change.
-    Always confirm with the cruise line before booking.</footer>
+  <div class="notice" id="notice" hidden></div>
+  <nav class="places" id="places" aria-label="Destinations"></nav>
+  <main id="main"></main>
+  <section class="about" id="about" hidden></section>
+  <footer id="credits"></footer>
 </div>
 
 <script>
+// Destination photos (Wikimedia Commons, credited at the bottom of the page)
+const W = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+const PHOTOS = {
+  hawaii:  { url: W + "2/2c/Diamond_Head_from_Waikiki_Beach_01.jpg/1280px-Diamond_Head_from_Waikiki_Beach_01.jpg",
+             credit: "Waikiki and Diamond Head by Ossewa, CC BY-SA 4.0",
+             page: "https://commons.wikimedia.org/wiki/File:Diamond_Head_from_Waikiki_Beach_01.jpg",
+             words: ["hawaii", "honolulu", "maui", "kauai", "hilo", "kona", "oahu"] },
+  japan:   { url: W + "7/71/12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg/1280px-12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg",
+             credit: "Chureito Pagoda and Mount Fuji by Dang Son, CC0",
+             page: "https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg",
+             words: ["japan", "yokohama", "kobe", "tokyo", "osaka", "fukuoka"] },
+  spain:   { url: W + "9/91/Barcelona_desde_el_Parque_G%C3%BCell.JPG/1280px-Barcelona_desde_el_Parque_G%C3%BCell.JPG",
+             credit: "Barcelona from Park Güell by Jcca76, CC BY-SA 4.0",
+             page: "https://commons.wikimedia.org/wiki/File:Barcelona_desde_el_Parque_G%C3%BCell.JPG",
+             words: ["spain", "barcelona", "malaga", "palma", "mallorca", "valencia", "ibiza"] },
+  florida: { url: W + "2/29/Sunset_Key_viewed_from_Key_West%2C_Florida.jpg/1280px-Sunset_Key_viewed_from_Key_West%2C_Florida.jpg",
+             credit: "Sunset Key from Key West by Julian Lupyan, CC0",
+             page: "https://commons.wikimedia.org/wiki/File:Sunset_Key_viewed_from_Key_West,_Florida.jpg",
+             words: ["florida", "tampa", "miami", "canaveral", "key west", "bahamas", "caribbean", "nassau", "cozumel"] },
+  alaska:  { url: W + "a/ac/KENAI_FJORDS_NATIONAL_PARK%2C_ALASKA_--_NORTHWEST_GLACIER.jpg/1280px-KENAI_FJORDS_NATIONAL_PARK%2C_ALASKA_--_NORTHWEST_GLACIER.jpg",
+             credit: "Northwest Glacier, Kenai Fjords by CROCKERBD, CC BY-SA 4.0",
+             page: "https://commons.wikimedia.org/wiki/File:KENAI_FJORDS_NATIONAL_PARK,_ALASKA_--_NORTHWEST_GLACIER.jpg",
+             words: ["alaska", "seattle", "vancouver", "juneau", "seward", "whittier", "ketchikan"] },
+  sea:     { url: W + "4/4e/White_Sea%E2%80%93Baltic_Canal._Cruise_ship_A._S._Popov_P7120615_2200.jpg/1280px-White_Sea%E2%80%93Baltic_Canal._Cruise_ship_A._S._Popov_P7120615_2200.jpg",
+             credit: "Cruise ship at sunset by Alexxx1979, CC BY-SA 4.0",
+             page: "https://commons.wikimedia.org/wiki/File:White_Sea%E2%80%93Baltic_Canal._Cruise_ship_A._S._Popov_P7120615_2200.jpg",
+             words: [] },
+};
+function photoFor(g) {
+  const hay = (g.name + " " + g.ports.join(" ")).toLowerCase();
+  for (const [k, p] of Object.entries(PHOTOS)) if (p.words.some(w => hay.includes(w))) return p;
+  return PHOTOS.sea;
+}
+const bg = p => `background-image:url('${p.url}')`;
+
 const $ = s => document.querySelector(s);
 const money = n => "$" + Math.round(n).toLocaleString("en-US");
-const fmtDate = d => new Date(d + "T12:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+const dt = d => new Date(d + "T12:00:00");
+const longDate = d => dt(d).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-let DATA = null, HIST = {}, filter = "all";
-try { filter = localStorage.getItem("cruise-filter") || "all"; } catch (e) {}
+let DATA = null, HIST = {}, view = "all";
+try { view = localStorage.getItem("cruise-view") || "all"; } catch (e) {}
+function setView(v) { view = v; try { localStorage.setItem("cruise-view", v); } catch (e) {} render(); window.scrollTo({ top: 0 }); }
 
 function ago(iso) {
   const mins = Math.round((Date.now() - new Date(iso)) / 60000);
@@ -122,104 +206,127 @@ function ago(iso) {
   const d = Math.round(h / 24); return d + (d === 1 ? " day ago" : " days ago");
 }
 
-function sailingRow(s, groupName, passengers) {
-  const tags = [];
-  if (s.is_deal) tags.push(`<span class="tag deal">${Math.round(s.vs_typical * 100)}% below typical</span>`);
-  if (groupName) tags.push(`<span class="tag">${esc(groupName)}</span>`);
-  if (s.price_change < 0) tags.push(`<span class="tag down">↓ ${money(-s.price_change)} since last check</span>`);
-  else if (s.price_change > 0) tags.push(`<span class="tag up">↑ ${money(s.price_change)}</span>`);
-  if (s.new) tags.push(`<span class="tag">New</span>`);
-  return `<a class="sailing" href="${esc(s.url)}" target="_blank" rel="noopener">
-    <div><div class="when">${fmtDate(s.date)}</div><div class="ship">${esc(s.ship)} · ${esc(s.line)}</div></div>
-    <div class="price"><div class="pn">${money(s.per_night)}<small>/night</small></div>
-      <div class="tot">${money(s.total)} for ${passengers}</div></div>
-    <div class="meta">${s.nights} nights from ${esc(s.port)}</div>
-    ${tags.length ? `<div class="tags">${tags.join("")}</div>` : ""}
-  </a>`;
+function ticket(s, g, P) {
+  return `<a class="ticket" href="${esc(s.url)}" target="_blank" rel="noopener">
+    <div class="pic" style="${bg(photoFor(g))}"><span class="where">${esc(g.name)}</span><span class="off">${Math.round(s.vs_typical * 100)}% off typical</span></div>
+    <div class="perf"></div>
+    <div class="body">
+      <div class="price">${money(s.per_night)}<small> a night each</small></div>
+      <div class="when">${longDate(s.date)}</div>
+      <div class="sub">${s.nights} nights from ${esc(s.port)}</div>
+      <div class="sub">${esc(s.ship)}, ${esc(s.line)}</div>
+      <div class="sub">${money(s.total)} total for ${P}</div>
+    </div></a>`;
+}
+
+function row(s, P, hidden) {
+  const d = dt(s.date);
+  let flag = "";
+  if (s.is_deal) flag = `<span class="flag">${Math.round(s.vs_typical * 100)}% off typical</span>`;
+  else if (s.price_change < 0) flag = `<span class="flag down">Down ${money(-s.price_change)} since last check</span>`;
+  else if (s.price_change > 0) flag = `<span class="flag up">Up ${money(s.price_change)}</span>`;
+  return `<a class="row" href="${esc(s.url)}" target="_blank" rel="noopener"${hidden ? " hidden" : ""}>
+    <div class="cal"><div class="m">${d.toLocaleDateString("en-US", { month: "short" })}</div><div class="d">${d.getDate()}</div></div>
+    <div><div class="name">${esc(s.ship)}</div>
+      <div class="sub">${s.nights} nights from ${esc(s.port)}${d.getFullYear() !== new Date().getFullYear() ? ", " + d.getFullYear() : ""}</div>${flag}</div>
+    <div class="amt">${money(s.per_night)}<small>a night each</small></div></a>`;
 }
 
 function spark(points) {
   if (!points || points.length < 2) return "";
-  const W = 300, H = 44, vals = points.map(p => p.low);
+  const Wd = 300, H = 40, vals = points.map(p => p.low);
   const lo = Math.min(...vals), hi = Math.max(...vals), span = hi - lo || 1;
-  const xy = points.map((p, i) => [(i / (points.length - 1)) * (W - 8) + 4, H - 6 - ((p.low - lo) / span) * (H - 14)]);
+  const xy = points.map((p, i) => [(i / (points.length - 1)) * (Wd - 8) + 4, H - 5 - ((p.low - lo) / span) * (H - 12)]);
   const d = xy.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
   const last = xy[xy.length - 1];
-  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
-      <path d="${d}" fill="none" stroke="var(--sea)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
-      <circle cx="${last[0]}" cy="${last[1]}" r="3" fill="var(--sea)"/></svg>
-    <div class="spark-label"><span>Cheapest per night, last ${points.length} checks</span><span>${money(lo)}–${money(hi)}</span></div>`;
+  return `<svg class="spark" viewBox="0 0 ${Wd} ${H}" preserveAspectRatio="none" role="img" aria-label="Cheapest nightly price over the last ${points.length} checks, ${money(lo)} to ${money(hi)}">
+    <path d="${d}" fill="none" stroke="var(--sea)" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+    <circle cx="${last[0]}" cy="${last[1]}" r="3.5" fill="var(--sea)"/></svg>`;
+}
+
+function destCard(g, P, full) {
+  const p = photoFor(g);
+  const cheapest = g.sailings[0];
+  const nights = g.min_nights === g.max_nights ? g.max_nights : g.min_nights + " to " + g.max_nights;
+  const head = (full ? "" : `<button class="dest-pic" style="${bg(p)}" data-v="${esc(g.name)}" ${full ? "disabled" : ""} aria-label="See all ${esc(g.name)} sailings">
+      <div class="cap"><h3>${esc(g.name)}</h3>
+      ${cheapest ? `<div class="from">from<b>${money(cheapest.per_night)}</b>a night</div>` : ""}</div></button>`) + `
+    <div class="dest-meta"><span>From ${esc(g.ports.join(", "))}</span><span>${nights} nights</span></div>`;
+  if (!g.sailings.length) return `<article class="dest">${head}<div class="empty">No deals for this window.</div></article>`;
+  const hist = HIST[g.name];
+  const trend = hist && hist.length > 1
+    ? `<div class="dest-meta"><span>Cheapest price, last ${hist.length} checks</span><span>Typical ${money(g.typical)} a night</span></div>${spark(hist)}`
+    : `<div class="dest-meta"><span>${g.count} sailings found</span><span>Typical ${money(g.typical)} a night</span></div>`;
+  const n = full ? 15 : 3;
+  const list = full ? g.sailings : g.sailings.slice(0, n);
+  const rows = list.map((s, i) => row(s, P, i >= n)).join("");
+  let foot = "";
+  if (full && g.sailings.length > n) foot = `<button class="see-all showall">Show all ${g.sailings.length}</button>`;
+  else if (!full) foot = `<button class="see-all" data-v="${esc(g.name)}">See all ${g.count} ${esc(g.name)} sailings</button>`;
+  return `<article class="dest">${head}${trend}<div class="rows">${rows}</div>${foot}</article>`;
 }
 
 function render() {
-  const d = DATA, P = d.settings?.passengers || 2;
-  const groups = d.groups || [];
-  // chips
-  const names = ["all", ...groups.map(g => g.name)];
-  if (!names.includes(filter)) filter = "all";
-  $("#chips").innerHTML = names.map(n =>
-    `<button class="chip" aria-pressed="${n === filter}" data-f="${esc(n)}">${n === "all" ? "All deals" : esc(n)}</button>`).join("");
-  $("#chips").onclick = e => {
-    const b = e.target.closest(".chip"); if (!b) return;
-    filter = b.dataset.f; try { localStorage.setItem("cruise-filter", filter); } catch (e) {}
-    render();
-  };
+  const d = DATA, P = d.settings?.passengers || 2, groups = d.groups || [];
+  if (view !== "all" && !groups.some(g => g.name === view)) view = "all";
+  const g = groups.find(x => x.name === view);
+  const pct = Math.round((d.settings?.deal_discount || .4) * 100);
+  const allDeals = groups.flatMap(gr => gr.sailings.filter(s => s.is_deal).map(s => ({ s, g: gr })))
+    .sort((a, b) => b.s.vs_typical - a.s.vs_typical);
+
+  // hero
+  $("#hero").style.backgroundImage = `url('${(g ? photoFor(g) : PHOTOS.sea).url}')`;
+  $("#title").textContent = g ? g.name : "Bridget's Cruises";
+  $("#backslot").innerHTML = g ? `<button class="back" id="back"><span aria-hidden="true">‹</span> All destinations</button>` : "";
+  if (g) $("#back").onclick = () => setView("all");
+  const nDeals = g ? g.sailings.filter(s => s.is_deal).length : allDeals.length;
+  $("#sub").innerHTML = `<b>${nDeals} deal${nDeals === 1 ? "" : "s"}</b> right now. Checked ${ago(d.last_checked)}.`;
+
+  // destination picker
+  $("#places").innerHTML = [`<button class="place" aria-pressed="${view === "all"}" data-v="all"><span class="ph" style="${bg(PHOTOS.sea)}"></span>Everything</button>`]
+    .concat(groups.map(x => `<button class="place" aria-pressed="${view === x.name}" data-v="${esc(x.name)}"><span class="ph" style="${bg(photoFor(x))}"></span>${esc(x.name)}</button>`)).join("");
 
   let html = "";
-  if (filter === "all") {
-    const deals = groups.flatMap(g => g.sailings.filter(s => s.is_deal).map(s => ({ s, g })))
-      .sort((a, b) => b.s.vs_typical - a.s.vs_typical);
-    html += `<h2>Deals right now</h2>`;
-    html += deals.length
-      ? `<div class="card"><div>${deals.map((x, i) => sailingRow(x.s, x.g.name, P).replace('<a class="sailing"', i >= 8 ? '<a class="sailing" hidden' : '<a class="sailing"')).join("")}</div>${deals.length > 8 ? `<button class="more showall">Show all ${deals.length} deals</button>` : ""}</div>`
-      : `<div class="card"><div class="empty" style="border:none">No sailings are ${Math.round((d.settings?.deal_discount || .25) * 100)}% below typical today. The cheapest for each destination are below.</div></div>`;
-    html += `<h2>Cheapest by destination</h2>`;
-    html += groups.map(g => destCard(g, P, 3)).join("");
+  if (!g) {
+    html += `<h2>Best deals right now</h2><p class="h2-note">At least ${pct}% under the usual nightly price for their destination.</p>`;
+    if (allDeals.length) {
+      html += `<div class="tickets">${allDeals.slice(0, 12).map(x => ticket(x.s, x.g, P)).join("")}</div>`;
+    } else {
+      html += `<div class="dest"><div class="empty">Nothing is ${pct}% under typical today. The cheapest sailings for each destination are below.</div></div>`;
+    }
+    html += `<h2>Destinations</h2><p class="h2-note">Tap a photo to see every sailing.</p>`;
+    html += groups.map(x => destCard(x, P, false)).join("");
   } else {
-    const g = groups.find(x => x.name === filter);
-    html += `<h2>${esc(g.name)}</h2>` + destCard(g, P, 12, true);
+    html += `<div style="height:14px"></div>` + destCard(g, P, true);
   }
   $("#main").innerHTML = html;
-  $("#main").querySelectorAll(".more").forEach(b => b.onclick = () => {
-    filter = b.dataset.f; try { localStorage.setItem("cruise-filter", filter); } catch (e) {}
-    render(); window.scrollTo({ top: 0 });
+  document.querySelectorAll("[data-v]").forEach(b => { if (!b.disabled) b.onclick = () => setView(b.dataset.v); });
+  document.querySelectorAll(".showall").forEach(b => b.onclick = () => {
+    b.previousElementSibling.querySelectorAll(".row[hidden]").forEach(x => x.hidden = false); b.remove();
   });
-  $("#main").querySelectorAll(".showall").forEach(b => b.onclick = () => {
-    b.previousElementSibling.querySelectorAll(".sailing[hidden]").forEach(x => x.hidden = false); b.remove();
-  });
-}
-
-function destCard(g, P, n, full) {
-  const head = `<div class="dest-head"><div><h3>${esc(g.name)}</h3>
-      <div class="ports">From ${esc(g.ports.join(", "))} · ${g.min_nights === g.max_nights ? g.max_nights : g.min_nights + "–" + g.max_nights} nights</div></div>
-      ${g.typical ? `<div class="typical">Typical<br><b>${money(g.typical)}</b>/night</div>` : ""}</div>`;
-  if (!g.sailings.length) return `<div class="card">${head}<div class="empty">No sailings found in this window.</div></div>`;
-  const list = full ? g.sailings : g.sailings.slice(0, n);
-  const rows = list.map((s, i) => sailingRow(s, "", P).replace('<a class="sailing"', i >= n ? '<a class="sailing" hidden' : '<a class="sailing"')).join("");
-  let foot = "";
-  if (full && g.sailings.length > n) foot = `<button class="more showall">Show all ${g.sailings.length}</button>`;
-  else if (!full) foot = `<button class="more" data-f="${esc(g.name)}">See all ${g.count} sailings</button>`;
-  return `<div class="card">${head}${spark(HIST[g.name])}<div>${rows}</div>${foot}</div>`;
 }
 
 function renderMeta() {
-  const d = DATA;
-  const pct = Math.round((d.settings?.deal_discount || .25) * 100);
-  const nDeals = (d.groups || []).reduce((a, g) => a + g.sailings.filter(s => s.is_deal).length, 0);
-  $("#sub").textContent = `Checked ${ago(d.last_checked)} · ${nDeals} deal${nDeals === 1 ? "" : "s"} · ${d.settings?.passengers || 2} people`;
+  const d = DATA, s = d.settings || {};
+  const pct = Math.round((s.deal_discount || .4) * 100);
   const notes = [...(d.notes || [])];
-  if (d.status && d.status !== "ok" && d.last_success) notes.unshift(`Today's check didn't go through. Showing prices from ${ago(d.last_success)}.`);
-  if (notes.length) { $("#status").hidden = false; $("#status").innerHTML = notes.map(n => `<p>${esc(n)}</p>`).join(""); }
-  const s = d.settings || {};
-  $("#settings").hidden = false;
-  $("#settings").innerHTML = `<h3 style="margin:0 0 8px;font-size:17px">What this checks</h3>
-    <p>Sailings in the next ${s.months_ahead || 6} months, priced for ${s.passengers || 2}. A deal is at least ${pct}% under the typical nightly price for that destination${s.max_per_night ? ` and no more than ${money(s.max_per_night)} a night` : ""}.</p>
+  if (d.status && d.status !== "ok" && d.last_success) notes.unshift(`Today's check didn't go through. These prices are from ${ago(d.last_success)}.`);
+  if (notes.length) { $("#notice").hidden = false; $("#notice").innerHTML = notes.map(n => `<p>${esc(n)}</p>`).join(""); }
+  $("#about").hidden = false;
+  $("#about").innerHTML = `<h2>How this works</h2>
+    <p>Every morning this checks cruises leaving in the next ${s.months_ahead || 6} months, priced for ${s.passengers || 2}. A deal is a sailing at least ${pct}% under the usual nightly price for its destination${s.max_per_night ? `, and no more than ${money(s.max_per_night)} a night` : ""}.</p>
     ${s.excluded_lines?.length ? `<p>Skipping ${esc(s.excluded_lines.join(", "))}.</p>` : ""}
-    <p>Checked once a day. Changes to your settings sheet are picked up on the next check.</p>
+    <p>Prices are CruiseMapper's lowest fare per person, usually an inside cabin. Check with the cruise line before booking.</p>
     ${d.sheet_url ? `<a class="btn" href="${esc(d.sheet_url)}" target="_blank" rel="noopener">Change what I search</a>` : ""}`;
 }
 
+function renderCredits() {
+  $("#credits").innerHTML = "Photos from Wikimedia Commons: " +
+    Object.values(PHOTOS).map(p => `<a href="${p.page}" target="_blank" rel="noopener">${esc(p.credit)}</a>`).join("; ") + ".";
+}
+
 async function load() {
+  renderCredits();
   try {
     const t = Date.now();
     const [r1, r2] = await Promise.all([fetch("data/cruises.json?t=" + t), fetch("data/history.json?t=" + t)]);
@@ -228,8 +335,8 @@ async function load() {
     if (!DATA.groups) throw new Error("no data yet");
     renderMeta(); render();
   } catch (e) {
-    $("#sub").textContent = "";
-    $("#main").innerHTML = `<div class="loading">No cruise results yet. The first daily check will fill this in.</div>`;
+    $("#hero").style.backgroundImage = `url('${PHOTOS.sea.url}')`;
+    $("#sub").textContent = "No results yet. The first daily check will fill this in.";
   }
 }
 load();
