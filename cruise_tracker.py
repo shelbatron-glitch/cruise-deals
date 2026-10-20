@@ -36,7 +36,7 @@ import sys
 # ============================================================
 
 DEFAULT_SETTINGS = {
-    "deal_discount": 0.25,      # 25% below typical
+    "deal_discount": 0.40,      # 40% below typical
     "months_ahead": 6,
     "passengers": 2,
     "excluded_lines": ["Carnival Cruise Line"],
@@ -116,7 +116,7 @@ def parse_settings_rows(rows, notes):
             if 0.05 <= pct <= 0.6:
                 s["deal_discount"] = pct
             else:
-                notes.append(f"Deal threshold '{value}' looked off, so 25% was used.")
+                notes.append(f"Deal threshold '{value}' looked off, so 40% was used.")
         elif "month" in label and num is not None:
             s["months_ahead"] = int(min(max(num, 1), 12))
         elif ("traveler" in label or "people" in label or "passenger" in label) and num:
@@ -424,7 +424,7 @@ def send_email(new_deals, settings, page_url):
               'text-decoration:none;font-weight:bold;">See all cruises</a></p>') if page_url else ""
     html = f"""
     <html><body style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#222;">
-      <h1 style="font-size:22px;margin:16px 0 4px;">New cruise deals</h1>
+      <h1 style="font-size:22px;margin:16px 0 4px;">New deals on Bridget's Cruises</h1>
       <p style="color:#666;margin:0 0 12px;">Sailings at least {settings['deal_discount']:.0%} below the typical
         nightly price for their destination. Prices are per person, cheapest cabin.</p>
       <table style="width:100%;border-collapse:collapse;font-size:14px;">{rows}</table>
