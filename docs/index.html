@@ -279,7 +279,8 @@ function render() {
   $("#title").textContent = g ? g.name : "Bridget's Cruises";
   $("#backslot").innerHTML = g ? `<button class="back" id="back"><span aria-hidden="true">‹</span> All destinations</button>` : "";
   if (g) $("#back").onclick = () => setView("all");
-  const nDeals = g ? g.sailings.filter(s => s.is_deal).length : allDeals.length;
+  const dc = x => x.deal_count ?? x.sailings.filter(s => s.is_deal).length;
+  const nDeals = g ? dc(g) : groups.reduce((a, x) => a + dc(x), 0);
   $("#sub").innerHTML = `<b>${nDeals} deal${nDeals === 1 ? "" : "s"}</b> right now. Checked ${ago(d.last_checked)}.`;
 
   // destination picker
