@@ -526,7 +526,7 @@ def main():
         "groups": [{
             "name": gr["search"]["name"], "ports": gr["search"]["ports"],
             "min_nights": gr["search"]["min_nights"], "max_nights": gr["search"]["max_nights"],
-            "count": len(gr["sailings"]),
+            "count": len(gr["sailings"]), "deal_count": len(gr["deals"]),
             "typical": round(gr["typical"], 2) if gr["typical"] else None,
             "deal_line": round(gr["deal_line"], 2) if gr["deal_line"] else None,
             "sailings": [sailing_json(s) for s in gr["sailings"][:60]],
