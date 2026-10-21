@@ -1,6 +1,6 @@
 {
- "last_checked": "2026-10-20T18:44:56.048918+00:00",
- "last_success": "2026-10-20T18:44:56.048918+00:00",
+ "last_checked": "2026-10-21T15:59:37.176219+00:00",
+ "last_success": "2026-10-21T15:59:37.176219+00:00",
  "status": "ok",
  "settings": {
   "deal_discount": 0.4,
@@ -26,7 +26,7 @@
    ],
    "min_nights": 3,
    "max_nights": 5,
-   "count": 551,
+   "count": 555,
    "deal_count": 107,
    "typical": 141.8,
    "deal_line": 85.08,
@@ -2567,10 +2567,10 @@
    ],
    "min_nights": 3,
    "max_nights": 5,
-   "count": 67,
-   "deal_count": 6,
-   "typical": 149.0,
-   "deal_line": 89.4,
+   "count": 68,
+   "deal_count": 5,
+   "typical": 146.38,
+   "deal_line": 87.83,
    "sailings": [
     {
      "id": "5286466",
@@ -2583,11 +2583,11 @@
      "per_person": 418,
      "per_night": 83.6,
      "total": 836,
-     "vs_typical": 0.439,
+     "vs_typical": 0.429,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286458",
@@ -2600,11 +2600,11 @@
      "per_person": 420,
      "per_night": 84.0,
      "total": 840,
-     "vs_typical": 0.436,
+     "vs_typical": 0.426,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286461",
@@ -2617,11 +2617,11 @@
      "per_person": 420,
      "per_night": 84.0,
      "total": 840,
-     "vs_typical": 0.436,
+     "vs_typical": 0.426,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286473",
@@ -2634,11 +2634,11 @@
      "per_person": 422,
      "per_night": 84.4,
      "total": 844,
-     "vs_typical": 0.434,
+     "vs_typical": 0.423,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286482",
@@ -2651,11 +2651,11 @@
      "per_person": 431,
      "per_night": 86.2,
      "total": 862,
-     "vs_typical": 0.421,
+     "vs_typical": 0.411,
      "is_deal": true,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286478",
@@ -2668,11 +2668,11 @@
      "per_person": 440,
      "per_night": 88.0,
      "total": 880,
-     "vs_typical": 0.409,
-     "is_deal": true,
+     "vs_typical": 0.399,
+     "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286481",
@@ -2685,11 +2685,11 @@
      "per_person": 449,
      "per_night": 89.8,
      "total": 898,
-     "vs_typical": 0.397,
+     "vs_typical": 0.387,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286467",
@@ -2702,11 +2702,11 @@
      "per_person": 450,
      "per_night": 90.0,
      "total": 900,
-     "vs_typical": 0.396,
+     "vs_typical": 0.385,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286464",
@@ -2719,11 +2719,11 @@
      "per_person": 462,
      "per_night": 92.4,
      "total": 924,
-     "vs_typical": 0.38,
+     "vs_typical": 0.369,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286475",
@@ -2736,11 +2736,11 @@
      "per_person": 463,
      "per_night": 92.6,
      "total": 926,
-     "vs_typical": 0.379,
+     "vs_typical": 0.367,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286476",
@@ -2753,11 +2753,11 @@
      "per_person": 466,
      "per_night": 93.2,
      "total": 932,
-     "vs_typical": 0.374,
+     "vs_typical": 0.363,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5277095",
@@ -2770,11 +2770,11 @@
      "per_person": 375,
      "per_night": 93.75,
      "total": 750,
-     "vs_typical": 0.371,
+     "vs_typical": 0.36,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Mariner-Of-The-Seas-609",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286460",
@@ -2787,11 +2787,11 @@
      "per_person": 469,
      "per_night": 93.8,
      "total": 938,
-     "vs_typical": 0.37,
+     "vs_typical": 0.359,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286479",
@@ -2804,11 +2804,11 @@
      "per_person": 482,
      "per_night": 96.4,
      "total": 964,
-     "vs_typical": 0.353,
+     "vs_typical": 0.341,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286477",
@@ -2821,11 +2821,11 @@
      "per_person": 400,
      "per_night": 100.0,
      "total": 800,
-     "vs_typical": 0.329,
+     "vs_typical": 0.317,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286465",
@@ -2838,11 +2838,11 @@
      "per_person": 415,
      "per_night": 103.75,
      "total": 830,
-     "vs_typical": 0.304,
+     "vs_typical": 0.291,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286491",
@@ -2855,11 +2855,11 @@
      "per_person": 525,
      "per_night": 105.0,
      "total": 1050,
-     "vs_typical": 0.295,
+     "vs_typical": 0.283,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286472",
@@ -2872,11 +2872,11 @@
      "per_person": 530,
      "per_night": 106.0,
      "total": 1060,
-     "vs_typical": 0.289,
+     "vs_typical": 0.276,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286490",
@@ -2889,11 +2889,11 @@
      "per_person": 554,
      "per_night": 110.8,
      "total": 1108,
-     "vs_typical": 0.256,
+     "vs_typical": 0.243,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286494",
@@ -2906,11 +2906,11 @@
      "per_person": 555,
      "per_night": 111.0,
      "total": 1110,
-     "vs_typical": 0.255,
+     "vs_typical": 0.242,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286459",
@@ -2923,11 +2923,11 @@
      "per_person": 445,
      "per_night": 111.25,
      "total": 890,
-     "vs_typical": 0.253,
+     "vs_typical": 0.24,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286468",
@@ -2940,11 +2940,11 @@
      "per_person": 445,
      "per_night": 111.25,
      "total": 890,
-     "vs_typical": 0.253,
+     "vs_typical": 0.24,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286493",
@@ -2957,11 +2957,11 @@
      "per_person": 562,
      "per_night": 112.4,
      "total": 1124,
-     "vs_typical": 0.246,
+     "vs_typical": 0.232,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286484",
@@ -2974,11 +2974,11 @@
      "per_person": 573,
      "per_night": 114.6,
      "total": 1146,
-     "vs_typical": 0.231,
+     "vs_typical": 0.217,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286480",
@@ -2991,11 +2991,11 @@
      "per_person": 480,
      "per_night": 120.0,
      "total": 960,
-     "vs_typical": 0.195,
+     "vs_typical": 0.18,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5277094",
@@ -3008,11 +3008,11 @@
      "per_person": 482,
      "per_night": 120.5,
      "total": 964,
-     "vs_typical": 0.191,
+     "vs_typical": 0.177,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Mariner-Of-The-Seas-609",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286488",
@@ -3025,11 +3025,11 @@
      "per_person": 603,
      "per_night": 120.6,
      "total": 1206,
-     "vs_typical": 0.191,
+     "vs_typical": 0.176,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286469",
@@ -3042,11 +3042,11 @@
      "per_person": 635,
      "per_night": 127.0,
      "total": 1270,
-     "vs_typical": 0.148,
+     "vs_typical": 0.132,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286474",
@@ -3059,11 +3059,11 @@
      "per_person": 510,
      "per_night": 127.5,
      "total": 1020,
-     "vs_typical": 0.144,
+     "vs_typical": 0.129,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286462",
@@ -3076,11 +3076,11 @@
      "per_person": 514,
      "per_night": 128.5,
      "total": 1028,
-     "vs_typical": 0.138,
+     "vs_typical": 0.122,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286483",
@@ -3093,11 +3093,11 @@
      "per_person": 524,
      "per_night": 131.0,
      "total": 1048,
-     "vs_typical": 0.121,
+     "vs_typical": 0.105,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286489",
@@ -3110,7 +3110,24 @@
      "per_person": 524,
      "per_night": 131.0,
      "total": 1048,
-     "vs_typical": 0.121,
+     "vs_typical": 0.105,
+     "is_deal": false,
+     "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
+     "price_change": 0,
+     "new": false
+    },
+    {
+     "id": "5286495",
+     "date": "2027-04-22",
+     "nights": 4,
+     "ship": "Liberty Of The Seas",
+     "line": "Royal Caribbean",
+     "itinerary": "4 nights, round-trip from Galveston, USA",
+     "port": "Galveston",
+     "per_person": 556,
+     "per_night": 139.0,
+     "total": 1112,
+     "vs_typical": 0.05,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
      "price_change": null,
@@ -3127,11 +3144,11 @@
      "per_person": 575,
      "per_night": 143.75,
      "total": 1150,
-     "vs_typical": 0.035,
+     "vs_typical": 0.018,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286492",
@@ -3144,11 +3161,11 @@
      "per_person": 596,
      "per_night": 149.0,
      "total": 1192,
-     "vs_typical": 0.0,
+     "vs_typical": -0.018,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286463",
@@ -3161,11 +3178,11 @@
      "per_person": 758,
      "per_night": 151.6,
      "total": 1516,
-     "vs_typical": -0.017,
+     "vs_typical": -0.036,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286485",
@@ -3178,11 +3195,11 @@
      "per_person": 763,
      "per_night": 152.6,
      "total": 1526,
-     "vs_typical": -0.024,
+     "vs_typical": -0.043,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286487",
@@ -3195,11 +3212,11 @@
      "per_person": 784,
      "per_night": 156.8,
      "total": 1568,
-     "vs_typical": -0.052,
+     "vs_typical": -0.071,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286470",
@@ -3212,11 +3229,11 @@
      "per_person": 823,
      "per_night": 164.6,
      "total": 1646,
-     "vs_typical": -0.105,
+     "vs_typical": -0.125,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5286471",
@@ -3229,11 +3246,11 @@
      "per_person": 808,
      "per_night": 202.0,
      "total": 1616,
-     "vs_typical": -0.356,
+     "vs_typical": -0.38,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Liberty-Of-The-Seas-731",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283526",
@@ -3246,11 +3263,11 @@
      "per_person": 1732,
      "per_night": 433.0,
      "total": 3464,
-     "vs_typical": -1.906,
+     "vs_typical": -1.958,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283525",
@@ -3263,11 +3280,11 @@
      "per_person": 1740,
      "per_night": 435.0,
      "total": 3480,
-     "vs_typical": -1.919,
+     "vs_typical": -1.972,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283535",
@@ -3280,11 +3297,11 @@
      "per_person": 2241,
      "per_night": 448.2,
      "total": 4482,
-     "vs_typical": -2.008,
+     "vs_typical": -2.062,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283534",
@@ -3297,11 +3314,11 @@
      "per_person": 2261,
      "per_night": 452.2,
      "total": 4522,
-     "vs_typical": -2.035,
+     "vs_typical": -2.089,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283527",
@@ -3314,11 +3331,11 @@
      "per_person": 2321,
      "per_night": 464.2,
      "total": 4642,
-     "vs_typical": -2.115,
+     "vs_typical": -2.171,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283528",
@@ -3331,11 +3348,11 @@
      "per_person": 1972,
      "per_night": 493.0,
      "total": 3944,
-     "vs_typical": -2.309,
+     "vs_typical": -2.368,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283533",
@@ -3348,11 +3365,11 @@
      "per_person": 1972,
      "per_night": 493.0,
      "total": 3944,
-     "vs_typical": -2.309,
+     "vs_typical": -2.368,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283536",
@@ -3365,11 +3382,11 @@
      "per_person": 1972,
      "per_night": 493.0,
      "total": 3944,
-     "vs_typical": -2.309,
+     "vs_typical": -2.368,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283532",
@@ -3382,11 +3399,11 @@
      "per_person": 2481,
      "per_night": 496.2,
      "total": 4962,
-     "vs_typical": -2.33,
+     "vs_typical": -2.39,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283531",
@@ -3399,11 +3416,11 @@
      "per_person": 2541,
      "per_night": 508.2,
      "total": 5082,
-     "vs_typical": -2.411,
+     "vs_typical": -2.472,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283517",
@@ -3416,11 +3433,11 @@
      "per_person": 2600,
      "per_night": 520.0,
      "total": 5200,
-     "vs_typical": -2.49,
+     "vs_typical": -2.553,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283518",
@@ -3433,11 +3450,11 @@
      "per_person": 2600,
      "per_night": 520.0,
      "total": 5200,
-     "vs_typical": -2.49,
+     "vs_typical": -2.553,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283524",
@@ -3450,11 +3467,11 @@
      "per_person": 2108,
      "per_night": 527.0,
      "total": 4216,
-     "vs_typical": -2.537,
+     "vs_typical": -2.6,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283543",
@@ -3467,11 +3484,11 @@
      "per_person": 2671,
      "per_night": 534.2,
      "total": 5342,
-     "vs_typical": -2.585,
+     "vs_typical": -2.65,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283544",
@@ -3484,11 +3501,11 @@
      "per_person": 2671,
      "per_night": 534.2,
      "total": 5342,
-     "vs_typical": -2.585,
+     "vs_typical": -2.65,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283545",
@@ -3501,11 +3518,11 @@
      "per_person": 2204,
      "per_night": 551.0,
      "total": 4408,
-     "vs_typical": -2.698,
+     "vs_typical": -2.764,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283520",
@@ -3518,11 +3535,11 @@
      "per_person": 2218,
      "per_night": 554.5,
      "total": 4436,
-     "vs_typical": -2.721,
+     "vs_typical": -2.788,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283519",
@@ -3535,11 +3552,11 @@
      "per_person": 2338,
      "per_night": 584.5,
      "total": 4676,
-     "vs_typical": -2.923,
+     "vs_typical": -2.993,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283540",
@@ -3552,11 +3569,11 @@
      "per_person": 2961,
      "per_night": 592.2,
      "total": 5922,
-     "vs_typical": -2.974,
+     "vs_typical": -3.046,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     },
     {
      "id": "5283541",
@@ -3569,28 +3586,11 @@
      "per_person": 2961,
      "per_night": 592.2,
      "total": 5922,
-     "vs_typical": -2.974,
+     "vs_typical": -3.046,
      "is_deal": false,
      "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
-    },
-    {
-     "id": "5283542",
-     "date": "2027-03-31",
-     "nights": 4,
-     "ship": "Disney Magic",
-     "line": "Disney Cruise Line",
-     "itinerary": "4 nights, round-trip from Galveston, USA",
-     "port": "Galveston",
-     "per_person": 2396,
-     "per_night": 599.0,
-     "total": 4792,
-     "vs_typical": -3.02,
-     "is_deal": false,
-     "url": "https://www.cruisemapper.com/ships/Disney-Magic-684",
-     "price_change": null,
-     "new": true
+     "price_change": 0,
+     "new": false
     }
    ]
   }
