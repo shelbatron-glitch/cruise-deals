@@ -52,6 +52,8 @@ DEFAULT_SEARCHES = [
     {"name": "Spain", "ports": ["Barcelona", "Malaga", "Palma de Mallorca", "Valencia"],
      "min_nights": 1, "max_nights": 7},
     {"name": "Texas short cruises", "ports": ["Galveston"], "min_nights": 3, "max_nights": 5},
+    {"name": "Tampa port deals", "ports": ["Tampa"], "min_nights": 1, "max_nights": 4,
+     "deal_discount": 0.50},   # up to 5 days (4 nights), 50% below typical
 ]
 
 MAX_PAGES_PER_PORT = 40     # safety stop; CruiseMapper shows 15 sailings per page
@@ -130,16 +132,24 @@ def parse_settings_rows(rows, notes):
             s["max_per_night"] = num if num > 0 else None
     return s
 
+def parse_deal_pct(value):
+    """'60%', '60' or '0.6' -> 0.6. Returns None if blank or out of range."""
+    num = to_number(value)
+    if num is None:
+        return None
+    pct = num / 100 if num > 1 else num
+    return pct if 0.05 <= pct <= 0.9 else None
+
 def parse_search_rows(rows, notes):
     searches = []
     header_seen = False
     for row in rows:
-        row = [c.strip() for c in row] + [""] * 5
+        row = [c.strip() for c in row] + [""] * 6
         if not header_seen:
             if any("departure port" in c.lower() for c in row):
                 header_seen = True
             continue
-        on, name, ports, mn, mx = row[:5]
+        on, name, ports, mn, mx, deal = row[:6]
         if not name and not ports:
             continue
         if not yes(on):
@@ -153,8 +163,15 @@ def parse_search_rows(rows, notes):
         hi = int(hi) if hi else 7
         if lo > hi:
             lo, hi = hi, lo
-        searches.append({"name": name or ", ".join(port_list), "ports": port_list,
-                         "min_nights": max(1, lo), "max_nights": min(hi, 30)})
+        srch = {"name": name or ", ".join(port_list), "ports": port_list,
+                "min_nights": max(1, lo), "max_nights": min(hi, 30)}
+        if deal:   # optional per-search deal threshold; blank = the main setting
+            pct = parse_deal_pct(deal)
+            if pct is None:
+                notes.append(f"'{name}' deal threshold '{deal}' looked off, so the main setting was used.")
+            else:
+                srch["deal_discount"] = pct
+        searches.append(srch)
     return searches
 
 def load_choices():
@@ -343,7 +360,9 @@ def score(results, settings, state):
     for gr in results:
         sailings = sorted(gr["sailings"], key=lambda s: s["per_night"])
         typical = median(s["per_night"] for s in sailings) if sailings else None
-        deal_line = typical * (1 - settings["deal_discount"]) if typical else None
+        discount = gr["search"].get("deal_discount", settings["deal_discount"])
+        gr["deal_discount"] = discount
+        deal_line = typical * (1 - discount) if typical else None
         ceiling = settings.get("max_per_night")
         for s in sailings:
             s["vs_typical"] = round(1 - s["per_night"] / typical, 3) if typical else None
@@ -426,8 +445,8 @@ def send_email(new_deals, settings, page_url):
     html = f"""
     <html><body style="font-family:Arial,sans-serif;max-width:640px;margin:0 auto;color:#222;">
       <h1 style="font-size:22px;margin:16px 0 4px;">New deals on Bridget's Cruises</h1>
-      <p style="color:#666;margin:0 0 12px;">Sailings at least {settings['deal_discount']:.0%} below the typical
-        nightly price for their destination. Prices are per person, cheapest cabin.</p>
+      <p style="color:#666;margin:0 0 12px;">Sailings well below the typical nightly price for their
+        destination. Prices are per person, cheapest cabin.</p>
       <table style="width:100%;border-collapse:collapse;font-size:14px;">{rows}</table>
       {button}
       <p style="color:#999;font-size:12px;text-align:center;margin-top:14px;">
@@ -530,6 +549,7 @@ def main():
             "count": len(gr["sailings"]), "deal_count": len(gr["deals"]),
             "typical": round(gr["typical"], 2) if gr["typical"] else None,
             "deal_line": round(gr["deal_line"], 2) if gr["deal_line"] else None,
+            "deal_discount": gr["deal_discount"],
             "sailings": [sailing_json(s) for s in gr["sailings"][:60]],
         } for gr in results],
     }
