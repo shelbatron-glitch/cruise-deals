@@ -302,13 +302,13 @@ function render() {
 
   let html = "";
   if (!g) {
-    html += `<h2>Best deals right now</h2><p class="h2-note">At least ${pct}% under the usual nightly price for their destination.</p>`;
+    html += `<h2>Best deals right now</h2><p class="h2-note">Well under the usual nightly price for their destination.</p>`;
     if (allDeals.length) {
       html += `<div class="deals-row"><button class="arrow prev" aria-label="Previous deals" hidden>‹</button>`
         + `<div class="tickets">${allDeals.slice(0, 12).map(x => ticket(x.s, x.g, P)).join("")}</div>`
         + `<button class="arrow next" aria-label="More deals">›</button></div>`;
     } else {
-      html += `<div class="dest"><div class="empty">Nothing is ${pct}% under typical today. The cheapest sailings for each destination are below.</div></div>`;
+      html += `<div class="dest"><div class="empty">No deals today. The cheapest sailings for each destination are below.</div></div>`;
     }
     html += `<h2>Destinations</h2><p class="h2-note">Tap a photo to see every sailing.</p>`;
     html += groups.map(x => destCard(x, P, false)).join("");
@@ -343,7 +343,7 @@ function renderMeta() {
   if (notes.length) { $("#notice").hidden = false; $("#notice").innerHTML = notes.map(n => `<p>${esc(n)}</p>`).join(""); }
   $("#about").hidden = false;
   $("#about").innerHTML = `<h2>How this works</h2>
-    <p>Every morning this checks cruises leaving in the next ${s.months_ahead || 6} months, priced for ${s.passengers || 2}. A deal is a sailing at least ${pct}% under the usual nightly price for its destination${s.max_per_night ? `, and no more than ${money(s.max_per_night)} a night` : ""}.</p>
+    <p>Every morning this checks cruises leaving in the next ${s.months_ahead || 6} months, priced for ${s.passengers || 2}. A deal is a sailing at least ${pct}% under the usual nightly price for its destination${(d.groups || []).filter(g => g.deal_discount && Math.round(g.deal_discount * 100) !== pct).map(g => ` (${Math.round(g.deal_discount * 100)}% for ${esc(g.name)})`).join("")}${s.max_per_night ? `, and no more than ${money(s.max_per_night)} a night` : ""}.</p>
     ${s.excluded_lines?.length ? `<p>Skipping ${esc(s.excluded_lines.join(", "))}.</p>` : ""}
     <p>Prices are CruiseMapper's lowest fare per person, usually an inside cabin. Check with the cruise line before booking.</p>
     ${d.sheet_url ? `<a class="btn" href="${esc(d.sheet_url)}" target="_blank" rel="noopener">Change what I search</a>` : ""}`;
