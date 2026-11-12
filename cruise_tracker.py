@@ -45,15 +45,16 @@ DEFAULT_SETTINGS = {
 }
 
 DEFAULT_SEARCHES = [
-    {"name": "Florida short cruises", "ports": ["Tampa", "Port Canaveral", "Miami"],
+    {"name": "South Florida", "ports": ["Miami", "Fort Lauderdale"],
      "min_nights": 3, "max_nights": 5},
+    {"name": "Port Canaveral", "ports": ["Port Canaveral"], "min_nights": 3, "max_nights": 5},
+    {"name": "Tampa port deals", "ports": ["Tampa"], "min_nights": 1, "max_nights": 4,
+     "deal_discount": 0.50},   # up to 5 days (4 nights), 50% below typical
     {"name": "Japan", "ports": ["Yokohama", "Kobe-Osaka"], "min_nights": 1, "max_nights": 7},
     {"name": "Hawaii", "ports": ["Honolulu"], "min_nights": 1, "max_nights": 7},
     {"name": "Spain", "ports": ["Barcelona", "Malaga", "Palma de Mallorca", "Valencia"],
      "min_nights": 1, "max_nights": 7},
     {"name": "Texas short cruises", "ports": ["Galveston"], "min_nights": 3, "max_nights": 5},
-    {"name": "Tampa port deals", "ports": ["Tampa"], "min_nights": 1, "max_nights": 4,
-     "deal_discount": 0.50},   # up to 5 days (4 nights), 50% below typical
 ]
 
 MAX_PAGES_PER_PORT = 40     # safety stop; CruiseMapper shows 15 sailings per page
@@ -476,7 +477,7 @@ def sample_results(searches):
     ships = [("Royal Caribbean", "Rhapsody of the Seas"), ("Norwegian", "Norwegian Pride of America"),
              ("Celebrity", "Celebrity Ascent"), ("MSC", "MSC Seashore"), ("Princess", "Diamond Princess"),
              ("Holland America", "Westerdam"), ("Virgin Voyages", "Valiant Lady")]
-    base = {"Florida short cruises": 95, "Japan": 160, "Hawaii": 210, "Spain": 120}
+    base = {"South Florida": 95, "Port Canaveral": 95, "Japan": 160, "Hawaii": 210, "Spain": 120}
     out, today = [], datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     for srch in searches:
         sailings = []
