@@ -1,6 +1,6 @@
 {
- "last_checked": "2026-11-23T22:42:50.094279+00:00",
- "last_success": "2026-11-23T22:42:50.094279+00:00",
+ "last_checked": "2026-11-24T21:20:39.364488+00:00",
+ "last_success": "2026-11-24T21:20:39.364488+00:00",
  "status": "ok",
  "settings": {
   "deal_discount": 0.4,
@@ -1060,7 +1060,7 @@
    ],
    "min_nights": 3,
    "max_nights": 5,
-   "count": 253,
+   "count": 255,
    "deal_count": 61,
    "typical": 176.75,
    "deal_line": 106.05,
@@ -2993,7 +2993,7 @@
    ],
    "min_nights": 1,
    "max_nights": 7,
-   "count": 275,
+   "count": 276,
    "deal_count": 32,
    "typical": 151.43,
    "deal_line": 90.86,
